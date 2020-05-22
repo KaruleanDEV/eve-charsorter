@@ -58,16 +58,6 @@ def converttoids():
 			CharID.writelines("\t"+str(ids)+","+"\n") #so jank
 			print("\n", ids, cids, "Character Sorted", maxdata, "Out of", ListChar)
 			
-		
-			
-#Testing
-def postdiscordcmd():
-	headers = {'Content-Type': 'application/json', 'Authorization': 'MjYwOTk0MDc4NTAwNTg1NDgz.Dw8_oQ.aclNOudoP1ubywRRRkiGrnUgMNA'}
-	cidsl = input()
-	pload = {'content': input()}
-	pr = requests.post("https://discordapp.com/api/v6/channels/{}/messages".format(cidsl), data=pload, headers=headers)
-	print(pr)
-
 #bulkuploadidstoesi
 def filteresicorp():
 	#BULK publicDATA request
